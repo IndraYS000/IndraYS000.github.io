@@ -29,8 +29,11 @@
         scroll-behavior: smooth;
 }
 
-@font-face { font-family: bridgnorth; src: url('BRIDGE.TFF'); } 
-@font-face { font-family: bridgnorth; font-weight: bold; src: url('BRIDGE.TFF');}
+#style-bridgnorth {
+
+font-family: bridgnorth;
+
+}
 
 .headline1{
     color: #fff;
@@ -60,7 +63,6 @@
 	}
 .text1{
     color: #fff;
-    font-family: bridgnorth;
     font-size: 22px;
 	text-align: left;
   padding-top: 80px;
@@ -151,12 +153,6 @@
 	padding-left: 420px;
 }
 
-#style-bridgnorth {
-
-font-family: bridgnorth;
-
-}
-
 /* VERSI DESKTOP  */
 @media (min-width:992px){
 
@@ -216,6 +212,11 @@ font-family: bridgnorth;
   margin-top: 15px;
 }
 
+#login {
+
+	margin-left: 300px;
+	
+}
 
 .anchor {
 	color: transparent;
@@ -239,13 +240,17 @@ font-family: bridgnorth;
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Katalog</a>
+					</li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Kontak kami</a>
+					</li>
+					<li class="nav-item">
+                    <a class="nav-link" id="login" href="#">Login</a>
+					<li class="nav-item">
+                    <a class="nav-link" href="#">Buat Akun</a>
+					</li>
+					</li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="Cari" placeholder="Cari" aria-label="Cari">
-                    <button class="btn btn-outline-success" type="submit">Cari</button>
-                </form>
             </div>
           </div>
         </div>
@@ -293,7 +298,7 @@ font-family: bridgnorth;
 
 	<div class="background1">
 		<h1 class="headline1">#KERENTERUS</h1>
-		<p class="text1" id="style-bridgnorth">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, molestiae!<br>
+		<p class="text1" id="style-bridgnorth" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, molestiae!<br>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, cum?<br>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, necessitatibus! Soluta ad quasi minus aliquid.
     </p>
