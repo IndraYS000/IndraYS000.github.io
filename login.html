@@ -222,9 +222,11 @@ lines (207 sloc) 7.65 KB
 
             <div class="container">
                 <label for="uname"><b>Username</b></label>
-                 <input type="text" placeholder="Enter Username" name="uname" required>
+                 <input type="text" placeholder="Enter Username" name="uname" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+				 title="Harus berisi format email yang valid" required>
                 <label for="psw"><b>Password</b></label>
-                 <input type="password" placeholder="Enter Password" name="psw" required>
+                 <input type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+				 title="Harus berisi setidaknya satu angka dan satu huruf besar dan kecil, dan setidaknya 8 karakter atau lebih"required>
             <button class="button1" type="submit" data-toggle ="modal" data-target="#ModalLong">Login</button>
             </div>
 
