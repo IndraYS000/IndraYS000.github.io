@@ -1,4 +1,30 @@
-lines (207 sloc) 7.65 KB
+<?php
+    require('koneksi.php');
+    // When form submitted, check and create user session.
+    if (isset($_POST['username'])) {
+        $username = stripslashes($_REQUEST['username']);    // removes backslashes
+        $username = mysqli_real_escape_string($host, $username);
+        $password = stripslashes($_REQUEST['password']);
+        $password = mysqli_real_escape_string($host, $password);
+        // Check user is exist in the database
+        $query    = "SELECT * FROM akun WHERE username='$username'
+                     AND password='$password'";
+        $result = mysqli_query($host, $query) or die(mysqli_error($host));
+        $rows = mysqli_num_rows($result);
+        if ($rows == 1) {
+            $_SESSION['username'] = $username;
+            // Redirect to user dashboard page
+            header("Location: index.php");
+			exit;
+        } else {
+            echo "<div class='form'>
+			</br></br>
+            <h3>Username/Password Anda Salah</h3><br/>
+            </div>";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -181,6 +207,7 @@ lines (207 sloc) 7.65 KB
     </head>
 
     <body>
+
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
             <div class="container">
                <div class="container-fluid">
@@ -213,7 +240,7 @@ lines (207 sloc) 7.65 KB
 
         <div>
 
-        <form action="#" method="post">
+        <form class="form" method="post" name="login">
             <div class="imgcontainer" style="padding-top: 2cm;padding-bottom: 1cm;">
              <center>
               <img src="Logo_Dummy_Barber.png" width="150" height="150" alt="Avatar">
@@ -221,11 +248,11 @@ lines (207 sloc) 7.65 KB
             </div>
 
             <div class="container">
-                <label for="uname"><b>Username</b></label>
-                 <input type="text" placeholder="Enter Username" name="uname" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                <label for="username"><b>Username</b></label>
+                 <input type="text" placeholder="Enter Username" name="username" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
 				 title="Harus berisi format email yang valid" required>
-                <label for="psw"><b>Password</b></label>
-                 <input type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                <label for="password"><b>Password</b></label>
+                 <input type="password" placeholder="Enter Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
 				 title="Harus berisi setidaknya satu angka dan satu huruf besar dan kecil, dan setidaknya 8 karakter atau lebih"required>
             <button class="button1" type="submit" data-toggle ="modal" data-target="#ModalLong">Login</button>
             </div>
