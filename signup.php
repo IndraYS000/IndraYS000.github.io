@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php session_start(); ?>
     <head>
         <title>Buat Akun</title>
 
@@ -179,6 +180,33 @@
     </head>
 
     <body>
+<?php
+    require('koneksi.php');
+    // When form submitted, insert values into the database.
+    if (isset($_REQUEST['username'])) {
+        // removes backslashes
+        $username = stripslashes($_REQUEST['username']);
+        //escapes special characters in a string
+        $username = mysqli_real_escape_string($host, $username);
+        $password = stripslashes($_REQUEST['password']);
+        $password = mysqli_real_escape_string($host, $password);
+        $query    = "INSERT into akun (username, password)
+                     VALUES ('$username', '$password')";
+        $result   = mysqli_query($host, $query);
+        if ($result) {
+            echo "<div class='form'>
+			</br></br>
+                  <h3>Akun Berhasil Terdaftar.</h3><br/>
+                  </div>";
+        } else {
+            echo "<div class='form'>
+			</br></br>
+                  <h3>Maaf, Username Sudah Terdaftar</h3><br/>
+				  <p> Silahkan pilih username lain.</p>
+                  </div>";
+        }
+    }
+?>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
             <div class="container">
                <div class="container-fluid">
@@ -210,7 +238,7 @@
         </nav>
 
         <div>
-        <form action="#" method="post">
+        <form class="form" action="" method="post">
             <div class="imgcontainer" style="padding-top: 2cm;padding-bottom: 1cm;">
              <center>
               <img src="Logo_Dummy_Barber.png" width="150" height="150" alt="Avatar">
@@ -218,11 +246,11 @@
             </div>
 
             <div class="container">
-				<label for="email"><b>Email/Username</b></label>
-                 <input type="text" placeholder="Enter Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+				<label for="username"><b>Email/Username</b></label>
+                 <input type="text" placeholder="Enter Email" name="username" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
 				 title="Harus berisi format email yang valid"required>
-                <label for="psw"><b>Password</b></label>
-                 <input type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                <label for="password"><b>Password</b></label>
+                 <input type="password" placeholder="Enter Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
 				 title="Harus berisi setidaknya satu angka dan satu huruf besar dan kecil, dan setidaknya 8 karakter atau lebih"required>
 				<button class="button1" type="submit" data-toggle ="modal" data-target="#ModalLong">Buat Akun</button>
             </div>
