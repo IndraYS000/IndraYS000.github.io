@@ -259,7 +259,7 @@
             <button type="button" class="button1" onclick="location.href= 'index.html'">Cancel</button>
 			</br>
             </br>
-            <center><span>Sudah punya Akun? <a href="login.html">Login Disini</a></span></center>
+            <center><span>Sudah punya Akun? <a href="login.php">Login Disini</a></span></center>
 			</br>
             </div>
           </form>

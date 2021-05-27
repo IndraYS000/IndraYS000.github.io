@@ -262,7 +262,7 @@
             <center><label><input type="checkbox" checked="checked" name="remember"> Remember me</label></center>
             </br>
             <center><span>Lupa <a href="#">password?</a></span></center>
-            <center><span>Belum punya Akun? <a href="signup.html">Buat Akun</a></span></center>
+            <center><span>Belum punya Akun? <a href="signup.php">Buat Akun</a></span></center>
             </div>
           </form>
 
