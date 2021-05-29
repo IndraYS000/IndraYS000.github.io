@@ -264,6 +264,17 @@
     </style>
   </head>
  <body>
+<?php
+  if (isset($_GET['pesan'])){
+    if ($_GET['pesan'] == "sukses"){
+      echo"
+        <script>
+          alert (\'welcome\';);
+        </script>
+      ";
+    }
+  }
+ ?>
   <!--Start Navbar-->
 
 <!--Nav-1  
