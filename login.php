@@ -7,8 +7,7 @@
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($host, $password);
         // Check user is exist in the database
-        $query    = "SELECT * FROM akun WHERE username='$username'
-                     AND password='$password'";
+        $query    = "CALL cari_akun ("$username","$password")";
         $result = mysqli_query($host, $query) or die(mysqli_error($host));
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
