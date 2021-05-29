@@ -13,8 +13,10 @@
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
             $_SESSION['username'] = $username;
+	    setcookie("username","$username",time()+1200,'/');
+            setcookie("password","$password",time()+1200,'/');
             // Redirect to user dashboard page
-            header("Location: index.php");
+            header("Location: index.php?pesan=berhasil");
 			exit;
         } else {
             echo "<div class='form'>
