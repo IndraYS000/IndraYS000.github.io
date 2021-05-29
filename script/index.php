@@ -60,8 +60,8 @@
 		font-family: "Raleway",fantasy;
 		font-size: 40px;
 		text-align: left;
-		 margin-right:100px;
-	   text-shadow: 3px 2px 1px grey;
+		margin-right:100px;
+	  text-shadow: 3px 2px 1px grey;
 		}
 
   .headline4{
@@ -71,6 +71,15 @@
 		text-align: Center;
     padding-top: 5rem;
   }
+
+  .headline5{
+    color: black;
+		font-family: algerian;
+		font-size: 40px;
+		text-align: Center;
+    padding-top: 5rem;
+  }
+
 	.text1{
 		color: #fff;
 		font-family: bridgnorth;
@@ -243,6 +252,15 @@
 	.anchor {
 		color: transparent;
 	}
+
+
+  #Katalog {
+
+    background-color:rgb(230, 221, 192)
+  }
+
+  
+
     </style>
   </head>
  <body>
@@ -401,7 +419,8 @@
 
    <!-- Katalog -->
 
-      <div class="container text-center" id="katalog">
+   <section id="Katalog">
+      <div class="container text-center">
         <div class="row"></div>
               <h1 class="row" id="middle" >Katalog</h1>
               <h5 class="text4"><i>Pilih gayamu</i></h5>
@@ -501,11 +520,49 @@
                 </div>
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L34.3,133.3C68.6,139,137,149,206,181.3C274.3,213,343,267,411,266.7C480,267,549,213,617,202.7C685.7,192,754,224,823,208C891.4,192,960,128,1029,133.3C1097.1,139,1166,213,1234,229.3C1302.9,245,1371,203,1406,181.3L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+    </section>
 
       <!-- End Katalog -->
 
-      <!-- Founder -->
+      <!-- WHSPay - Jumbotron -->
 
+      <section class="text-center">
+        <h1 class="headline5 display-4">WHSPay</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>Tarif Harga</h2>
+            </div>
+          </div>
+
+          <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Dewasa & Remaja</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Anak-anak</p>
+              </div>
+            </div>
+          </div>
+        </div></div>
+
+        </div>
+      </section>
+        
+      <!-- End WHSPay - Jumbotron -->
+
+      <!-- Founder -->
+      <section>
       <div class="container text-center">
         <div class="row">
               <h1 class="row" id="middle2">Founder</h1>
@@ -544,6 +601,7 @@
                 </div>
         </div>
       </div>
+    </section>
 
             <!-- End Founder -->
 
