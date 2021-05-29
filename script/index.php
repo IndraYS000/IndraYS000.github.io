@@ -63,6 +63,14 @@
 		 margin-right:100px;
 	   text-shadow: 3px 2px 1px grey;
 		}
+
+  .headline4{
+    color: black;
+		font-family: algerian;
+		font-size: 40px;
+		text-align: Center;
+    padding-top: 5rem;
+  }
 	.text1{
 		color: #fff;
 		font-family: bridgnorth;
@@ -98,6 +106,13 @@
 	  padding-right: 10px;
 	  text-shadow: 3px 2px 1px rgb(216, 206, 206);
 	}
+  .text5{
+    padding-top: 4rem;
+  }
+
+  .jumbotron{
+    background-color:rgb(230, 221, 192)
+  }
 
 	.background1 {
 		background: url(model1.png) no-repeat;
@@ -231,26 +246,32 @@
     </style>
   </head>
  <body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
-        <div class="container">
-              <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+  <!--Start Navbar-->
+
+<!--Nav-1  
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+    <div class="container">
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
                 </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item">
+				        <li class="nav-item">
                     <a class="nav-link active" id="logo" aria-current="page" href="#"><img src="Logo_Dummy_Barber.png" height="50px"></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Halaman Utama</a>
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" a href="#katalog" text="transparent">Katalog</a>
-					</li>
+					        </li>
+                  <li class="nav-item">
+                    <a class="nav-link" a href="#whspay">WHS Pay</a>
+				          </li>
                   <li class="nav-item">
                     <a class="nav-link" a href="#contact-us">Kontak kami</a>
-					</li>
+				          </li>
 					<li class="nav-item">
                     <a class="nav-link" id="login" href="login.html">Login</a>
 					<li class="nav-item">
@@ -262,6 +283,44 @@
           </div>
         </div>
     </nav>
+  -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark shadow p-2" style="background-color: #000000">
+    <div class="container">
+        <a class="nav-link active" id="logo" aria-current="page" href="#"><img src="Logo_Dummy_Barber.png" height="50px"></a>
+      <a class="navbar-brand" href="#">WEBHAIRSTYLE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" a href="#katalog">Katalog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">WHSPay</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us">Kantak Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Buat Akun</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <!--End Navbar-->
+
+    <!--Start Carousel-->
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -302,6 +361,20 @@
       </button>
     </div>
 
+    <!--End Caraousel-->
+
+    <!--Start Jumbotron-->
+
+    <section class="jumbotron text-center">
+      <h1 class="headline4">WE ARE STYLISH, THE NEW ERA OF KAPSTER</h1>
+      <p class="text5">join us</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fffff" fill-opacity="1" d="M0,192L40,170.7C80,149,160,107,240,90.7C320,75,400,85,480,74.7C560,64,640,32,720,37.3C800,43,880,85,960,101.3C1040,117,1120,107,1200,122.7C1280,139,1360,181,1400,202.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    </section>
+
+
+    <!--End Jumbotron-->
+
+    <!-- Background #KerenTerus -->
 
 	<div class="background1">
 		<h1 class="headline1">#KERENTERUS</h1>
@@ -311,14 +384,22 @@
       <br>3 pemuda ingin agar para cowok bisa sekeren mereka. <br>  kami sadar bahwa cowok-cowok haruslah keren <br> dimanapun dan kapanpun agar siap ketika jodoh telah datang.
     </p>
 	</div>
+
+   <!-- End Background #KerenTerus -->
+
+   <!-- Background #Kenapa Harus Webhairstyle -->
    
    <div class="background2">
-		<h1 class="headline2"> Kenapa harus webharistyle ? </h1>
+		<h1 class="headline4"> Kenapa harus webharistyle ? </h1>
 		<p class="text2">1. kami menyediakan jasa layanan online yang cepat dengan tarif terjangkau<br>
       2. kami memiliki pengalaman terbaik, anda akan merasakan pengalaman penata rambut pribadi<br>
       3. kami selalu update dan upgrade model-model rambut dan skill kami
     </p>
    </div>
+
+   <!-- End Background #Kenapa Harus Webhairstyle -->
+
+   <!-- Katalog -->
 
       <div class="container text-center" id="katalog">
         <div class="row"></div>
@@ -421,11 +502,13 @@
         </div>
       </div>
 
+      <!-- End Katalog -->
 
+      <!-- Founder -->
 
       <div class="container text-center">
         <div class="row">
-              <h1 class="row" id="middle2">Mas-Mas Founder</h1>
+              <h1 class="row" id="middle2">Founder</h1>
                 <div class="col">
                   <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
@@ -461,14 +544,20 @@
                 </div>
         </div>
       </div>
+
+            <!-- End Founder -->
+
+            <!-- Kontak kami -->
       
-      <div class="background3">
-        <h1 class="headline3" id="Contact Us">Contact Us</h1></br>
+ <div class="background3">
+  <h1 class="headline3" id="Contact Us">Contact Us</h1></br>
     <p class="text3">Universitas Pendidikan Indonesia, Kampus Cibiru</p>
     <p class="text3">+61 (8) 8234 3555</p>
     <p class="text3">admin@uideck.com</p>
-	<p class="text3" id="contact-us">Hubungi Via WhatsApp <a href="https://api.whatsapp.com/send?phone=6281939123456">Disini</a></p>
+	  <p class="text3" id="contact-us">Hubungi Via WhatsApp <a href="https://api.whatsapp.com/send?phone=6281939123456">Disini</a></p>
 
+        <!-- End Kontak kami -->
+        
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
