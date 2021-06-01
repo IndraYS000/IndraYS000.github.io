@@ -266,6 +266,17 @@
     </style>
   </head>
  <body>
+<?php
+  session_start();
+  if (isset($_GET['pesan'])){
+    if ($_GET['pesan'] == "sukses"){
+      function function_alert($message) {
+        echo "<script>alert('selamat datang $message!');</script>";
+      }
+      function_alert($_SESSION['username']);
+    }
+  }
+?>
   <!--Start Navbar-->
 
 <!--Nav-1  
