@@ -77,7 +77,7 @@
 		font-family: algerian;
 		font-size: 40px;
 		text-align: Center;
-    padding-top: 5rem;
+    padding-top: 1rem;
   }
 
 	.text1{
@@ -153,7 +153,7 @@
 
 	.row{
 
-	  padding-top: 100px;
+	  padding-top: 2rem;
 	  text-align:center;
 
 	}
@@ -259,22 +259,13 @@
     background-color:rgb(230, 221, 192)
   }
 
-  
+  .row .card:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  }
 
     </style>
   </head>
  <body>
-<?php
-  if (isset($_GET['pesan'])){
-    if ($_GET['pesan'] == "sukses"){
-      echo"
-        <script>
-          alert (\'welcome\';);
-        </script>
-      ";
-    }
-  }
- ?>
   <!--Start Navbar-->
 
 <!--Nav-1  
@@ -396,7 +387,7 @@
 
     <section class="jumbotron text-center">
       <h1 class="headline4">WE ARE STYLISH, THE NEW ERA OF KAPSTER</h1>
-      <p class="text5">join us</p>
+      <button class="btn btn-dark md-3 mb-5" type="submit">Join us</button>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fffff" fill-opacity="1" d="M0,192L40,170.7C80,149,160,107,240,90.7C320,75,400,85,480,74.7C560,64,640,32,720,37.3C800,43,880,85,960,101.3C1040,117,1120,107,1200,122.7C1280,139,1360,181,1400,202.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
     </section>
 
@@ -432,13 +423,13 @@
 
    <section id="Katalog">
       <div class="container text-center">
-        <div class="row"></div>
+        <div class="row">
               <h1 class="row" id="middle" >Katalog</h1>
               <h5 class="text4"><i>Pilih gayamu</i></h5>
                 <div class="col">
                   <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100" style="width: 16rem;">
                         <img src="kt_1.jpg" class="card-img-center" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 1</h5>
@@ -446,7 +437,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100" style="width: 16rem;">
                         <img src="kt_2.jpg" class="card-img-center" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 2</h5>
@@ -454,7 +445,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100" style="width:16rem;">
                         <img src="kt_3.jpg" class="card-img-center" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 3</h5>
@@ -471,7 +462,7 @@
                 <div class="col">
                   <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100" style="width: 16rem;">
                         <img src="kt_4.jpg" class="card-img-center" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 4</h5>
@@ -479,7 +470,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100" style="width: 16rem;">
                         <img src="kt_5.jpg" class="card-img-center" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 5</h5>
@@ -487,7 +478,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100" style="width: 16rem;">
                         <img src="kt_6.jpg" class="card-img-center" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 6</h5>
@@ -504,7 +495,7 @@
                 <div class="col">
                   <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100" style="width:16rem;">
                         <img src="kt_7.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 7</h5>
@@ -512,7 +503,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100" style="width: 16rem;">
                         <img src="kt_8.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 8</h5>
@@ -520,7 +511,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100">
+                      <div class="card h-100" style="width: 16rem;">
                         <img src="kt_9.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 9</h5>
@@ -547,10 +538,10 @@
             </div>
           </div>
 
-          <div class="row">
+          <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
+            <div class="card ms-5" style="width: 16rem;">
+              <img src="tarif-1.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <p class="card-text">Dewasa & Remaja</p>
               </div>
@@ -558,8 +549,8 @@
           </div>
 
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
+            <div class="card ms-5" style="width: 16rem;">
+              <img src="tarif-2.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <p class="card-text">Anak-anak</p>
               </div>
