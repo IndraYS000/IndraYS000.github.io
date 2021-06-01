@@ -298,6 +298,9 @@
                     <a class="nav-link" a href="#katalog" text="transparent">Katalog</a>
 					        </li>
                   <li class="nav-item">
+                     <a class="nav-link" a href="wares.php" text="transparent">wares</a>
+		  </li>
+                  <li class="nav-item">
                     <a class="nav-link" a href="#whspay">WHS Pay</a>
 				          </li>
                   <li class="nav-item">
