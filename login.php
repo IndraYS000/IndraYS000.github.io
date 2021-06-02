@@ -7,7 +7,7 @@
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($host, $password);
         // Check user is exist in the database
-        $query    = "CALL cari_akun ("$username","$password")";
+        $query    = "CALL cari_akun ($username,$password)";
         $result = mysqli_query($host, $query) or die(mysqli_error($host));
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
@@ -221,17 +221,17 @@
                           <a class="nav-link active" id="logo" aria-current="page" href="#"><img src="Logo_Dummy_Barber.png" height="50px"></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.html">Halaman Utama</a>
+                          <a class="nav-link active" aria-current="page" href="index.php">Halaman Utama</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="index.html">Katalog</a>
+                          <a class="nav-link" href="index.php">Katalog</a>
                         <li class="nav-item">
                           <a class="nav-link" href="#">Kontak kami</a>
                         <li class="nav-item">
-                          <a class="nav-link" id="login" href="login.html">Login</a>
+                          <a class="nav-link" id="login" href="login.php">Login</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="signup.html">Buat Akun</a>
+                          <a class="nav-link" href="signup.php">Buat Akun</a>
                         </li>
                       </ul>
                   </div>
@@ -259,7 +259,7 @@
             </div>
 
             <div class="container">
-            <button type="button" class="button1" onclick="location.href= 'index.html'">Cancel</button>
+            <button type="button" class="button1" onclick="location.href= 'index.php'">Cancel</button>
             <center><label><input type="checkbox" checked="checked" name="remember"> Remember me</label></center>
             </br>
             <center><span>Lupa <a href="#">password?</a></span></center>

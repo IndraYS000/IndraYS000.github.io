@@ -192,7 +192,7 @@
         $password = mysqli_real_escape_string($host, $password);
 //         $query    = "INSERT into akun (username, password)
 //                      VALUES ('$username', '$password')";
-	$query    = "CALL tambah_akun("$username","$password")";
+	$query    = "CALL tambah_akun($username,$password)";
         $result   = mysqli_query($host, $query);
         if ($result) {
             echo "<div class='form'>
@@ -220,17 +220,17 @@
                           <a class="nav-link active" id="logo" aria-current="page" href="#"><img src="Logo_Dummy_Barber.png" height="50px"></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.html">Halaman Utama</a>
+                          <a class="nav-link active" aria-current="page" href="index.php">Halaman Utama</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="index.html">Katalog</a>
+                          <a class="nav-link" href="index.php">Katalog</a>
                         <li class="nav-item">
-                          <a class="nav-link" href="index.html">Kontak kami</a>
+                          <a class="nav-link" href="index.php">Kontak kami</a>
 						<li class="nav-item">
-                          <a class="nav-link" id="login" href="login.html">Login</a>
+                          <a class="nav-link" id="login" href="login.php">Login</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="signup.html">Buat Akun</a>
+                          <a class="nav-link" href="signup.php">Buat Akun</a>
                         </li>
 					   </ul>
                   </div>
@@ -257,7 +257,7 @@
             </div>
 
             <div class="container">
-            <button type="button" class="button1" onclick="location.href= 'index.html'">Cancel</button>
+            <button type="button" class="button1" onclick="location.href= 'index.php'">Cancel</button>
 			</br>
             </br>
             <center><span>Sudah punya Akun? <a href="login.php">Login Disini</a></span></center>
