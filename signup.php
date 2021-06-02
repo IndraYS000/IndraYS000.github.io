@@ -190,15 +190,12 @@
         $username = mysqli_real_escape_string($host, $username);
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($host, $password);
-//         $query    = "INSERT into akun (username, password)
-//                      VALUES ('$username', '$password')";
-	$query    = "CALL tambah_akun($username,$password)";
+         $query    = "INSERT into akun (username, password)
+                      VALUES ('$username', '$password')";
+//	$query    = "CALL tambah_akun($username,$password)";
         $result   = mysqli_query($host, $query);
         if ($result) {
-            echo "<div class='form'>
-			</br></br>
-                  <h3>Akun Berhasil Terdaftar.</h3><br/>
-                  </div>";
+		echo "<script>alert('Akun Berhasil Terdaftar!');</script>";
         } else {
             echo "<div class='form'>
 			</br></br>
