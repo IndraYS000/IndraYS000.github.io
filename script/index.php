@@ -19,7 +19,6 @@
 	<Link rel="icon" href="Logo_Dummy_Barber.png" sizes="32x32">
 	<Link rel="icon" href="Logo_Dummy_Barber.png" sizes="192x192">
 	
-	<a href="#contact-us">contact us</a>
 	
     <style>
 	*{
@@ -276,6 +275,16 @@
     </style>
   </head>
  <body>
+<?php
+  if (isset($_GET['pesan'])){
+    if ($_GET['pesan'] == "sukses"){
+      function function_alert() {
+        echo "<script>alert('selamat datang!');</script>";
+      }
+      function_alert();
+    }
+  }
+?>
   <!--Start Navbar-->
 
 <!--Nav-1  
@@ -333,8 +342,11 @@
           <li class="nav-item">
             <a class="nav-link" href="#">WHSPay</a>
           </li>
+	  <li class="nav-item">
+            <a class="nav-link" href="wares.php">Wares</a>
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact-us">Kantak Kami</a>
+            <a class="nav-link" href="#contact-us">Kontak Kami</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Login</a>
