@@ -4,7 +4,7 @@
         function function_alert_gagal() {
             echo "<script>alert('oops! sepertinya anda salah memasukkan username atau password');</script>";
         }
-        function_alert_login();
+        function_alert_gagal();
     }
 ?>
 
