@@ -238,7 +238,7 @@
                  <input type="password" placeholder="Enter Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
 				 title="Harus berisi setidaknya satu angka dan satu huruf besar dan kecil, dan setidaknya 8 karakter atau lebih"required>
 
-            <button class="button1" type="submit" data-toggle ="modal" data-target="#ModalLong">Ubah</button>
+            <button class="button1" type="submit" data-toggle ="modal" data-target="#ModalLong">Hapus</button>
             </div>
 
             <div class="container">
