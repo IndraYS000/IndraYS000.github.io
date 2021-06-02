@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Login</title>
+        <title>Wares</title>
 
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -287,22 +287,20 @@
                 if (isset($_GET['urutan'])){
                     if ($_GET['urutan'] == "reset"){
                         $result = mysqli_query($koneksi,"CALL show_layanan()");
-                        $all_property = array();  //declare an array for saving property
-                        
-                        //showing property
+                        $all_property = array();
+   
                         echo '<center><table class="data-table">
-                                <tr class="data-heading">';  //initialize table tag
+                                <tr class="data-heading">';
                         while ($property = mysqli_fetch_field($result)) {
-                            echo '<th>' . $property->name . '</th>';  //get field name for header
-                            array_push($all_property, $property->name);  //save those to array
+                            echo '<th>' . $property->name . '</th>';
+                            array_push($all_property, $property->name);
                         }
-                        echo '</tr>'; //end tr tag
+                        echo '</tr>';
                         
-                        //showing all data
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<tr>";
                             foreach ($all_property as $item) {
-                                echo '<td>' . $row[$item] . '</td>'; //get items using property value
+                                echo '<td>' . $row[$item] . '</td>';
                             }
                             echo '</tr>';
                         }
@@ -310,22 +308,20 @@
                     }
                     if ($_GET['urutan'] == "tinggi"){
                         $result = mysqli_query($koneksi,"CALL urut_tinggi_layanan();");
-                        $all_property = array();  //declare an array for saving property
+                        $all_property = array();
                         
-                        //showing property
                         echo '<center><table class="data-table">
-                                <tr class="data-heading">';  //initialize table tag
+                                <tr class="data-heading">';
                         while ($property = mysqli_fetch_field($result)) {
-                            echo '<th>' . $property->name . '</th>';  //get field name for header
-                            array_push($all_property, $property->name);  //save those to array
+                            echo '<th>' . $property->name . '</th>';
+                            array_push($all_property, $property->name);
                         }
-                        echo '</tr>'; //end tr tag
+                        echo '</tr>'; 
                         
-                        //showing all data
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<tr>";
                             foreach ($all_property as $item) {
-                                echo '<td>' . $row[$item] . '</td>'; //get items using property value
+                                echo '<td>' . $row[$item] . '</td>';
                             }
                             echo '</tr>';
                         }
@@ -334,22 +330,20 @@
                     }
                     if ($_GET['urutan'] == "rendah"){
                         $result = mysqli_query($koneksi,"CALL urut_rendah_layanan();");
-                        $all_property = array();  //declare an array for saving property
+                        $all_property = array();
                         
-                        //showing property
                         echo '<center><table class="data-table">
-                                <tr class="data-heading">';  //initialize table tag
+                                <tr class="data-heading">';
                         while ($property = mysqli_fetch_field($result)) {
-                            echo '<th>' . $property->name . '</th>';  //get field name for header
-                            array_push($all_property, $property->name);  //save those to array
+                            echo '<th>' . $property->name . '</th>';
+                            array_push($all_property, $property->name);
                         }
-                        echo '</tr>'; //end tr tag
+                        echo '</tr>';
                         
-                        //showing all data
                         while ($row = mysqli_fetch_array($result)) {
                             echo "<tr>";
                             foreach ($all_property as $item) {
-                                echo '<td>' . $row[$item] . '</td>'; //get items using property value
+                                echo '<td>' . $row[$item] . '</td>';
                             }
                             echo '</tr>';
                         }
@@ -359,22 +353,20 @@
                 }
                 else{
                     $result = mysqli_query($koneksi,"CALL show_layanan()");
-                    $all_property = array();  //declare an array for saving property
+                    $all_property = array();
                     
-                    //showing property
                     echo '<center><table class="data-table">
-                            <tr class="data-heading">';  //initialize table tag
+                            <tr class="data-heading">';
                     while ($property = mysqli_fetch_field($result)) {
-                        echo '<th>' . $property->name . '</th>';  //get field name for header
-                        array_push($all_property, $property->name);  //save those to array
+                        echo '<th>' . $property->name . '</th>';
+                        array_push($all_property, $property->name);
                     }
-                    echo '</tr>'; //end tr tag
+                    echo '</tr>';
                     
-                    //showing all data
                     while ($row = mysqli_fetch_array($result)) {
                         echo "<tr>";
                         foreach ($all_property as $item) {
-                            echo '<td>' . $row[$item] . '</td>'; //get items using property value
+                            echo '<td>' . $row[$item] . '</td>';
                         }
                         echo '</tr>';
                     }
