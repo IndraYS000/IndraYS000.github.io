@@ -21,6 +21,10 @@ body {
   font-weight: bold;
 }
 
+.navbar-brand {
+    font-family: algerian;
+  }
+
 </style>
 
   <head>
