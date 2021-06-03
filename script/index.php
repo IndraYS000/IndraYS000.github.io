@@ -107,7 +107,7 @@
 
 	.text4{
 	  color:#fff
-	  font-family: "Raleway",serif;
+	  font-family: bridgnorth;
 	  font-size: 22px;
 		text-align: center;
 	  padding-top: 50px;
@@ -172,11 +172,12 @@
 	#middle {
 
 		padding-left: 500px;
+    font-family: algerian;
 	}
 
 	#middle2{
 
-		padding-left: 420px;
+		padding-left: 500px;
 	}
 
 	/* VERSI DESKTOP  */
@@ -262,9 +263,11 @@
     background-color:rgb(230, 221, 192)
   }
 
+  /*
   .row .card:hover {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
   }
+  */
 
   .title{
     color : white;
@@ -324,7 +327,7 @@
     </nav>
   -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark shadow p-2" style="background-color: #000000">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow p-2" style="background-color: #000000">
     <div class="container">
         <a class="nav-link active" id="logo" aria-current="page" href="#"><img src="Logo_Dummy_Barber.png" height="50px"></a>
       <a class="navbar-brand" href="#">WEBHAIRSTYLE</a>
@@ -474,7 +477,9 @@
       </div>
     </div>
   </div>
-
+  <br>
+  <br>
+  <br>
   </section>
 
 
@@ -486,11 +491,11 @@
       <div class="container text-center">
         <div class="row">
               <h1 class="row" id="middle" >Katalog</h1>
-              <h5 class="text4"><i>Pilih gayamu</i></h5>
+              <h5 class="text4">Pilih gayamu</h5>
                 <div class="col">
                   <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                      <div class="card h-100" style="width: 16rem;">
+                      <div class="card h-100 ms-5" style="width: 16rem;">
                         <img src="kt_1.jpg" class="card-img-center" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 1</h5>
@@ -498,7 +503,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100" style="width: 16rem;">
+                      <div class="card h-100 ms-5" style="width: 16rem;">
                         <img src="kt_2.jpg" class="card-img-center" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 2</h5>
@@ -506,7 +511,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100" style="width:16rem;">
+                      <div class="card h-100 ms-5" style="width:16rem;">
                         <img src="kt_3.jpg" class="card-img-center" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 3</h5>
@@ -523,7 +528,7 @@
                 <div class="col">
                   <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                      <div class="card h-100" style="width: 16rem;">
+                      <div class="card h-100 ms-5" style="width: 16rem;">
                         <img src="kt_4.jpg" class="card-img-center" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 4</h5>
@@ -531,7 +536,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100" style="width: 16rem;">
+                      <div class="card h-100 ms-5" style="width: 16rem;">
                         <img src="kt_5.jpg" class="card-img-center" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 5</h5>
@@ -539,7 +544,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100" style="width: 16rem;">
+                      <div class="card h-100 ms-5" style="width: 16rem;">
                         <img src="kt_6.jpg" class="card-img-center" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 6</h5>
@@ -556,7 +561,7 @@
                 <div class="col">
                   <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                      <div class="card h-100" style="width:16rem;">
+                      <div class="card h-100 ms-5" style="width:16rem;">
                         <img src="kt_7.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 7</h5>
@@ -564,7 +569,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100" style="width: 16rem;">
+                      <div class="card h-100 ms-5" style="width: 16rem;">
                         <img src="kt_8.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 8</h5>
@@ -572,7 +577,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card h-100" style="width: 16rem;">
+                      <div class="card h-100 ms-5" style="width: 16rem;">
                         <img src="kt_9.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Model 9</h5>
@@ -587,41 +592,6 @@
     </section>
 
       <!-- End Katalog -->
-
-      <!-- Tarif - Jumbotron -->
-
-      <section class="text-center">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>Tarif Harga</h2>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card ms-5" style="width: 10rem;">
-              <img src="tarif-1.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Dewasa & Remaja</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-3">
-            <div class="card ms-5" style="width: 10rem;">
-              <img src="tarif-2.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Anak-anak</p>
-              </div>
-            </div>
-          </div>
-        </div></div>
-
-        </div>
-      </section>
-        
-      <!-- Tarif - Jumbotron -->
 
       <!-- Founder -->
       <section>
