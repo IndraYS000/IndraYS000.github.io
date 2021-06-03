@@ -2,6 +2,19 @@
 <html lang="en">
 <style>
 
+*{
+margin: 0;
+padding: 0;
+}
+html {
+scroll-behavior: smooth;
+}
+#logo {
+
+margin : -10px;
+padding-right : 50px;
+}
+
 body {
   min-height: 1100px;
 }
@@ -71,9 +84,6 @@ body {
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
 		  <li class="nav-item">
 <?php 
 		include "koneksi.php";
@@ -87,9 +97,13 @@ body {
 		 }
 		}
 ?>
+
+      <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="wares.php">Our Services</a>
+            <a class="nav-link" href="wares.php">Layanan</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact-us">Kontak Kami</a>
