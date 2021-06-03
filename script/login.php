@@ -151,15 +151,6 @@
 	        text-align: left;
 	        margin-right:100px;
 	        }
-
-          .nav-link:hover::after {
-          content: '';
-          display: block;
-          border-bottom: 3px solid #fff;
-          width: 50%;
-          margin: auto;
-          padding-bottom: 5px;
-          }
 		  
 		  #login {
           margin-left: 300px;
