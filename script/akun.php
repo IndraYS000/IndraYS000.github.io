@@ -2,20 +2,6 @@
 <html lang="en">
 <style>
 
-*{
-  margin: 0;
-  padding: 0;
-}
-  html {
-  scroll-behavior: smooth;
-}
-		  
-#logo {
-
-	margin : -10px;
-	padding-right : 50px;
-}
-
 body {
   min-height: 1100px;
 }
@@ -34,10 +20,6 @@ body {
 .harga{
   font-weight: bold;
 }
-
-.navbar-brand {
-    font-family: algerian;
-  }
 
 </style>
 
@@ -80,7 +62,7 @@ body {
 ?>
   <!--Start Navbar-->
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow p-2" style="background-color: #000000">
+  <nav class="navbar navbar-expand-lg navbar-dark shadow p-2" style="background-color: #000000">
     <div class="container">
         <a class="nav-link active" id="logo" aria-current="page" href="#"><img src="Logo_Dummy_Barber.png" height="50px"></a>
       <a class="navbar-brand" href="#">WEBHAIRSTYLE</a>
@@ -92,20 +74,31 @@ body {
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#WHSPay">WHSPay</a>
+		  <li class="nav-item">
+<?php 
+		include "koneksi.php";
+		$query="SELECT * FROM whspay";
+		$result = mysqli_query($host, $query);
+		if(mysqli_num_rows($result) > 0)
+		{
+		 while($row =mysqli_fetch_array($result))
+		 {
+		  echo '<div style="Color:white">WHSPay Balance : '. $row["saldo"].'</div>';
+		 }
+		}
+?>
           </li>
-	  <li class="nav-item">
-            <a class="nav-link" href="wares.php">Layanan</a>
+		  <li class="nav-item">
+            <a class="nav-link" href="wares.php">Our Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact-us">Kontak Kami</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.php">Pengaturan</a>
+            <a class="nav-link" href="#">Pengaturan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="signup.php">Logout</a>
+            <a class="nav-link" href="#">Log out</a>
           </li>
         </ul>
       </div>
