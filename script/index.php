@@ -458,19 +458,19 @@
     <div class="card ms-4" style="width: 10rem;">
       <img src="Beard Trim.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Men's Haircut</h5>
+        <h5 class="card-title">Beard Trim</h5>
       </div>
     </div>
     <div class="card ms-4" style="width: 10rem;">
       <img src="Treatment.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Men's Haircut</h5>
+        <h5 class="card-title">Treatment</h5>
       </div>
     </div>
     <div class="card ms-4" style="width: 10rem;">
       <img src="Wash.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Men's Haircut</h5>
+        <h5 class="card-title">Wash</h5>
       </div>
     </div>
   </div>
