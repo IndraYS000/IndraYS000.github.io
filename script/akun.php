@@ -62,7 +62,7 @@ body {
 ?>
   <!--Start Navbar-->
 
-  <nav class="navbar navbar-expand-lg navbar-dark shadow p-2" style="background-color: #000000">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow p-2" style="background-color: #000000">
     <div class="container">
         <a class="nav-link active" id="logo" aria-current="page" href="#"><img src="Logo_Dummy_Barber.png" height="50px"></a>
       <a class="navbar-brand" href="#">WEBHAIRSTYLE</a>
@@ -78,7 +78,7 @@ body {
             <a class="nav-link" href="#">WHSPay</a>
           </li>
 	  <li class="nav-item">
-            <a class="nav-link" href="wares.php">Our Services</a>
+            <a class="nav-link" href="wares.php">Layanan</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact-us">Kontak Kami</a>
