@@ -2,6 +2,20 @@
 <html lang="en">
 <style>
 
+*{
+  margin: 0;
+  padding: 0;
+}
+  html {
+  scroll-behavior: smooth;
+}
+		  
+#logo {
+
+	margin : -10px;
+	padding-right : 50px;
+}
+
 body {
   min-height: 1100px;
 }
@@ -79,7 +93,7 @@ body {
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">WHSPay</a>
+            <a class="nav-link" href="#WHSPay">WHSPay</a>
           </li>
 	  <li class="nav-item">
             <a class="nav-link" href="wares.php">Layanan</a>
@@ -88,10 +102,10 @@ body {
             <a class="nav-link" href="#contact-us">Kontak Kami</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pengaturan</a>
+            <a class="nav-link" href="login.php">Pengaturan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Log out</a>
+            <a class="nav-link" href="signup.php">Logout</a>
           </li>
         </ul>
       </div>
