@@ -263,6 +263,10 @@
     background-color:rgb(230, 221, 192)
   }
 
+  .navbar-brand {
+    font-family: algerian;
+  }
+
   /*
   .row .card:hover {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
