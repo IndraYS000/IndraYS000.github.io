@@ -142,9 +142,14 @@
 		  #popup {
 			padding-top : 125px;
 		  }
-          .anchor {
+      
+      .anchor {
 	        color: transparent;
-          }
+      }
+
+      .navbar-brand {
+      font-family: algerian;
+      }
             </style>
     </head>
 
