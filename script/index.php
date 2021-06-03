@@ -346,7 +346,7 @@
             <a class="nav-link" href="#WHSPay">WHSPay</a>
           </li>
 	  <li class="nav-item">
-            <a class="nav-link" href="wares.php">Wares</a>
+            <a class="nav-link" href="wares.php">Layanan</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact-us">Kontak Kami</a>
