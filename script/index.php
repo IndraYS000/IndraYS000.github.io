@@ -340,7 +340,7 @@
             <a class="nav-link" a href="#katalog">Katalog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">WHSPay</a>
+            <a class="nav-link" href="#WHSPay">WHSPay</a>
           </li>
 	  <li class="nav-item">
             <a class="nav-link" href="wares.php">Wares</a>
@@ -349,10 +349,10 @@
             <a class="nav-link" href="#contact-us">Kontak Kami</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link" href="login.php">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Buat Akun</a>
+            <a class="nav-link" href="signup.php">Buat Akun</a>
           </li>
         </ul>
       </div>
@@ -412,7 +412,7 @@
       <br>
       <br>
       <br>
-      <button class="btn btn-dark md-3 mb-5" type="submit">Get Membership</button>
+      <button class="btn btn-dark md-3 mb-5" type="submit" href="signup.php">Get Membership</button>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fffff" fill-opacity="1" d="M0,192L40,170.7C80,149,160,107,240,90.7C320,75,400,85,480,74.7C560,64,640,32,720,37.3C800,43,880,85,960,101.3C1040,117,1120,107,1200,122.7C1280,139,1360,181,1400,202.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
     </section>
 
@@ -585,7 +585,6 @@
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L34.3,133.3C68.6,139,137,149,206,181.3C274.3,213,343,267,411,266.7C480,267,549,213,617,202.7C685.7,192,754,224,823,208C891.4,192,960,128,1029,133.3C1097.1,139,1166,213,1234,229.3C1302.9,245,1371,203,1406,181.3L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
     </section>
-
 
       <!-- End Katalog -->
 
