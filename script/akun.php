@@ -25,13 +25,43 @@ body {
 		font-size: 40px;
 		text-align: Center;
   }
-
+  
+.background3 {
+	        background: #333333 no-repeat;
+	        background-size: cover;
+	        background-attachment:fixed;
+	        margin-top:100px;
+	        width:100%;
+	        height:350px;
+	        padding:50px;
+          box-sizing:border-box;
+	        text-align:left;
+          }
+		  
+.headline3{
+            color: #fff;
+            font-family: "Raleway",fantasy;
+            font-size: 40px;
+	        text-align: left;
+	        margin-right:100px;
+            text-shadow: 3px 2px 1px grey;
+	        }
+			
+.text3{
+            color: #fff;
+            font-family: "Raleway",serif;
+            font-size: 22px;
+	        text-align: left;
+	        margin-right:100px;
+	        }
+			
 .card-title{
   font-weight: bold;
 }
 
 .harga{
   font-weight: bold;
+  
 }
 
 </style>
@@ -97,22 +127,19 @@ body {
 		 }
 		}
 ?>
-
-      <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          </li>
-		  <li class="nav-item">
-            <a class="nav-link" href="wares.php">Layanan</a>
+		</li>
+	  
+		<li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact-us">Kontak Kami</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pengaturan</a>
+            <a class="nav-link" href="editakun.php">Pengaturan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Log out</a>
+            <a class="nav-link" href="index.php">Log out</a>
           </li>
         </ul>
       </div>
@@ -235,7 +262,14 @@ body {
 </div>
   </section>
 
-
+<div class="background3">
+          <h1 class="headline3" id="Contact Us">Contact Us</h1></br>
+          <p class="text3">Universitas Pendidikan Indonesia, Kampus Cibiru</p>
+          <p class="text3">+61 (8) 8234 3555</p>
+          <p class="text3">admin@uideck.com</p>
+		  <p class="text3" id="contact-us">Hubungi Via WhatsApp <a href="https://api.whatsapp.com/send?phone=6281939123456">Disini</a></p>
+        </div>
+		
    <!-- End Layanan Kami - Jumbotron -->
 
 

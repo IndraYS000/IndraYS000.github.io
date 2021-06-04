@@ -184,17 +184,14 @@
 
   /*
 	@media (min-width:992px){
-
 	.navbar-brand, .nav-link{
 	  color: #fff !important;
 	}
-
 	.nav-link {
 	  text-transform: uppercase;
 	  margin-right: 30px;
 	  }
 	}
-
 	.nav-link:hover::after {
 	  content: '';
 	  display: block;
@@ -343,14 +340,11 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" a href="#katalog">Katalog</a>
+		  <li class="nav-item">
+            <a class="nav-link" href="#layanan">Layanan</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#WHSPay">WHSPay</a>
-          </li>
-	  <li class="nav-item">
-            <a class="nav-link" href="wares.php">Layanan</a>
+		   <li class="nav-item">
+            <a class="nav-link" href="#katalog">Katalog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact-us">Kontak Kami</a>
@@ -419,7 +413,7 @@
       <br>
       <br>
       <br>
-      <button class="btn btn-dark md-3 mb-5" type="submit" href="signup.php">Get Membership</button>
+      <button onclick="location.href='signup.php';" class="btn btn-dark md-3 mb-5" type="submit">Get Membership</button>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fffff" fill-opacity="1" d="M0,192L40,170.7C80,149,160,107,240,90.7C320,75,400,85,480,74.7C560,64,640,32,720,37.3C800,43,880,85,960,101.3C1040,117,1120,107,1200,122.7C1280,139,1360,181,1400,202.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
     </section>
 
@@ -454,7 +448,7 @@
    <!-- Layanan Kami - Jumbotron -->
 
    <section class="jumbotron text-center">
-    <h1 class="headline4">Layanan Barber Kami</h1>
+    <h1 class="headline4" id="layanan">Layanan Barber Kami</h1>
     <div class="row justify-content-center">
     <div class="card ms-4" style="width: 10rem;">
       <img src="Men's Hair.png" class="card-img-top" alt="...">
@@ -491,7 +485,7 @@
 
    <!-- Katalog -->
 
-   <section id="Katalog">
+   <section id="katalog">
       <div class="container text-center">
         <div class="row">
               <h1 class="row" id="middle" >Katalog</h1>

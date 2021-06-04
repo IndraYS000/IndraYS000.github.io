@@ -164,18 +164,17 @@
         $username = mysqli_real_escape_string($host, $username);
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($host, $password);
-//         $query    = "INSERT into akun (username, password)
-//                      VALUES ('$username', '$password')";
-	$query    = "CALL tambah_akun($username,$password)";
+		$query    = "INSERT into akun (username, password)
+                     VALUES ('$username', '$password')";
         $result   = mysqli_query($host, $query);
         if ($result) {
             echo "<div class='form'>
-			</br></br>
+			</br></br></br>
                   <h3>Akun Berhasil Terdaftar.</h3><br/>
                   </div>";
         } else {
             echo "<div class='form'>
-			</br></br>
+			</br></br></br>
                   <h3>Maaf, Username Sudah Terdaftar</h3><br/>
 				  <p> Silahkan pilih username lain.</p>
                   </div>";
@@ -213,7 +212,6 @@
               </div>
             </div>
         </nav>
-
         -->
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow p-2" style="background-color: #000000">
@@ -226,25 +224,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" a href="#katalog">Katalog</a>
+            <a class="nav-link" href="#contact-us">Kontak Kami</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">WHSPay</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Layanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact-us">Kantak Kami</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Buat Akun</a>
+            <a class="nav-link" href="login.php">Login</a>
           </li>
         </ul>
       </div>
@@ -260,7 +246,7 @@
             </div>
 
             <div class="container">
-				<label for="username"><b>Email/Username</b></label>
+				<label for="username"><b>Email</b></label>
                  <input type="text" placeholder="Enter Email" name="username" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
 				 title="Harus berisi format email yang valid"required>
                 <label for="password"><b>Password</b></label>

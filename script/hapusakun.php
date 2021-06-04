@@ -207,18 +207,11 @@
                           <a class="nav-link active" id="logo" aria-current="page" href="#"><img src="Logo_Dummy_Barber.png" height="50px"></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.php">Halaman Utama</a>
+                          <a class="nav-link active" aria-current="page" href="akun.php">Halaman Utama</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="index.php">Katalog</a>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Kontak kami</a>
-                        <li class="nav-item">
-                          <a class="nav-link" id="login" href="login.php">Login</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="signup.php">Buat Akun</a>
-                        </li>
+                          <a class="nav-link" href="#contact-us">Kontak kami</a>
+						 </li>
                       </ul>
                   </div>
               </div>
@@ -242,15 +235,11 @@
                  <input type="password" placeholder="Enter Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
 				 title="Harus berisi setidaknya satu angka dan satu huruf besar dan kecil, dan setidaknya 8 karakter atau lebih"required>
 
-            <button class="button1" type="submit" data-toggle ="modal" data-target="#ModalLong">Ubah</button>
+            <button class="button1" type="submit" data-toggle ="modal" data-target="#ModalLong">Hapus Akun</button>
             </div>
 
             <div class="container">
             <button type="button" class="button1" onclick="location.href= 'index.php'">Cancel</button>
-            <center><label><input type="checkbox" checked="checked" name="remember"> Remember me</label></center>
-            </br>
-            <center><span>Lupa <a href="#">password?</a></span></center>
-            <center><span>Belum punya Akun? <a href="signup.php">Buat Akun</a></span></center>
             </div>
           </form>
 
@@ -288,3 +277,4 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </html>
+© 2021 GitHub, Inc.

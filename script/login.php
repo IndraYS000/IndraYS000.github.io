@@ -7,7 +7,7 @@
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($host, $password);
         // Check user is exist in the database
-        $query    = "CALL cari_akun ($username,$password)";
+		$query = "SELECT username, password FROM akun WHERE username='$username' AND password='$password';";
         $result = mysqli_query($host, $query) or die(mysqli_error($host));
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
@@ -15,11 +15,11 @@
 	    setcookie("username","$username",time()+1200,'/');
             setcookie("password","$password",time()+1200,'/');
             // Redirect to user dashboard page
-            header("Location: index.php?pesan=berhasil");
+            header("Location: akun.php?pesan=$username");
 			exit;
         } else {
             echo "<div class='form'>
-			</br></br>
+			</br></br></br>
             <h3>Username/Password Anda Salah</h3><br/>
             </div>";
         }
@@ -183,7 +183,6 @@
     <body>
 
           <!--
-
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
             <div class="container">
                <div class="container-fluid">
@@ -213,7 +212,6 @@
               </div>
             </div>
         </nav>
-
         -->
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow p-2" style="background-color: #000000">
@@ -226,25 +224,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" a href="#katalog">Katalog</a>
+            <a class="nav-link" href="#contact-us">Kontak Kami</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">WHSPay</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Layanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact-us">Kantak Kami</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Buat Akun</a>
+            <a class="nav-link" href="signup.php">Buat Akun</a>
           </li>
         </ul>
       </div>
@@ -261,7 +247,7 @@
             </div>
 
             <div class="container">
-                <label for="username"><b>Username</b></label>
+                <label for="username"><b>Email</b></label>
                  <input type="text" placeholder="Enter Username" name="username" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
 				 title="Harus berisi format email yang valid" required>
                 <label for="password"><b>Password</b></label>
@@ -272,9 +258,6 @@
 
             <div class="container">
             <button type="button" class="button1" onclick="location.href= 'index.php'">Cancel</button>
-            <center><label><input type="checkbox" checked="checked" name="remember"> Remember me</label></center>
-            </br>
-            <center><span>Lupa <a href="#">password?</a></span></center>
             <center><span>Belum punya Akun? <a href="signup.php">Buat Akun</a></span></center>
             </div>
           </form>

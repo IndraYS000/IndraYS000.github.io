@@ -208,17 +208,11 @@
                           <a class="nav-link active" id="logo" aria-current="page" href="#"><img src="Logo_Dummy_Barber.png" height="50px"></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.php">Halaman Utama</a>
+                          <a class="nav-link active" aria-current="page" href="akun.php">Halaman Utama</a>
                         </li>
+                          <a class="nav-link" href="#contact-us">Kontak kami</a>
                         <li class="nav-item">
-                          <a class="nav-link" href="index.php">Katalog</a>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Kontak kami</a>
-                        <li class="nav-item">
-                          <a class="nav-link" id="login" href="login.php">Login</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="signup.php">Buat Akun</a>
+                          <a class="nav-link" href="hapusakun.php">Hapus Akun</a>
                         </li>
                       </ul>
                   </div>
@@ -253,11 +247,7 @@
             </div>
 
             <div class="container">
-            <button type="button" class="button1" onclick="location.href= 'index.php'">Cancel</button>
-            <center><label><input type="checkbox" checked="checked" name="remember"> Remember me</label></center>
-            </br>
-            <center><span>Lupa <a href="#">password?</a></span></center>
-            <center><span>Belum punya Akun? <a href="signup.php">Buat Akun</a></span></center>
+            <button type="button" class="button1" onclick="location.href= 'akun.php'">Cancel</button>
             </div>
           </form>
 
