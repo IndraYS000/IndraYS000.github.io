@@ -281,11 +281,17 @@
  <body>
 <?php
   if (isset($_GET['pesan'])){
-    if ($_GET['pesan'] == "sukses"){
-      function function_alert() {
-        echo "<script>alert('selamat datang!');</script>";
+    if ($_GET['pesan'] == "suksesedit"){
+      function function_alert_edit() {
+        echo "<script>alert('akun berhasil dimodifikasi!');</script>";
       }
-      function_alert();
+      function_alert_edit();
+    }
+    if ($_GET['pesan'] == "sukseshapus"){
+      function function_alert_hapus() {
+        echo "<script>alert('akun berhasil dihapus!');</script>";
+      }
+      function_alert_hapus();
     }
   }
 ?>
