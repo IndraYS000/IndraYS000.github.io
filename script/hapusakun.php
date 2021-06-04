@@ -134,15 +134,6 @@
 	        text-align:left;
           }
 
-          .nav-link:hover::after {
-          content: '';
-          display: block;
-          border-bottom: 3px solid #fff;
-          width: 50%;
-          margin: auto;
-          padding-bottom: 5px;
-          }
-
           #login {
           margin-left: 300px;
           }
@@ -152,28 +143,6 @@
 			margin : -10px;
 			padding-right : 50px;
 			}
-
-          /* VERSI DESKTOP  */
-          @media (min-width:992px){
-
-            .navbar-brand, .nav-link{
-            color: #ffffff !important;
-            }
-
-            .nav-link {
-            text-transform: uppercase;
-            margin-right: 30px;
-            }
-          }
-
-          .nav-link:hover::after {
-          content: '';
-          display: block;
-          border-bottom: 3px solid #3a6f70;
-          width: 50%;
-          margin: auto;
-          padding-bottom: 5px;
-          }
 		  
 		  .middle {
 			padding-left : 145px;
@@ -195,6 +164,7 @@
 
     <body>
 
+    <!--
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
             <div class="container">
                <div class="container-fluid">
@@ -217,6 +187,29 @@
               </div>
             </div>
         </nav>
+    -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow p-2" style="background-color: #000000">
+    <div class="container">
+        <a class="nav-link active" id="logo" aria-current="page" href="#"><img src="Logo_Dummy_Barber.png" height="50px"></a>
+      <a class="navbar-brand" href="#">WEBHAIRSTYLE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+		  <li class="nav-item">
+		</li>
+		<li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us">Kontak Kami</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
         <div>
 

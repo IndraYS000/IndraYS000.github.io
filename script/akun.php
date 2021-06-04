@@ -64,6 +64,10 @@ body {
   
 }
 
+.navbar-brand {
+    font-family: algerian;
+  }
+
 </style>
 
   <head>
@@ -178,11 +182,13 @@ body {
     <br>
     <br>
     <div class="row justify-content-center">
-    <div class="card ms-4" style="width: 12rem;">
+    <div class="card ms-4" style="width: 14rem;">
       <img src="Men's Hair.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title"> Men's Haircut</h5>
-        <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p class="card-text"> Gaya dan potongan yang sesuai dengan bentuk wajah anda.</p>
+        <br>
+        <br>
         <p>
         <i class="fa fa-star fa-lg"></i>
         <i class="fa fa-star fa-lg"></i>
@@ -194,11 +200,12 @@ body {
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popup_konfirmasi">Order</button>
       </div>
     </div>
-    <div class="card ms-4" style="width: 12rem;">
+    <div class="card ms-4" style="width: 14rem;">
       <img src="Beard Trim.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Beard Trim</h5>
-        <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p class="card-text"> Pastikan jenggotmu tetap rapi sesuai dengan bentuk wajah anda.</p>
+        <br>
         <p>
         <i class="fa fa-star fa-lg"></i>
         <i class="fa fa-star fa-lg"></i>
@@ -209,11 +216,11 @@ body {
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popup_konfirmasi">Order</button>
       </div>
     </div>
-    <div class="card ms-4" style="width: 12rem;">
+    <div class="card ms-4" style="width: 14rem;">
       <img src="Treatment.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Treatment</h5>
-        <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p class="card-text"> Dapatkan perawatan maksimal oleh kami agar rambut anda tetap sehat dan tampil memukau. </p>
         <p>
         <i class="fa fa-star fa-lg"></i>
         <i class="fa fa-star fa-lg"></i>
@@ -225,11 +232,13 @@ body {
        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popup_konfirmasi">Order</button>
       </div>
     </div>
-    <div class="card ms-4" style="width: 12rem;">
+    <div class="card ms-4" style="width: 14rem;">
       <img src="Wash.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Wash</h5>
-        <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p class="card-text"> Memelihara kulit kepalamu dengan produk eksklusif kami.</p>
+        <br>
+        <br>
         <p>
         <i class="fa fa-star fa-lg"></i>
         <i class="fa fa-star fa-lg"></i>
