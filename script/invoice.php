@@ -100,15 +100,12 @@ padding-right : 50px;
 	
   </head>
  <body>
-<?php
-  if (isset($_GET['pesan'])){
-    if ($_GET['pesan'] == "sukses"){
-      function function_alert() {
-        echo "<script>alert('selamat datang!');</script>";
-      }
-      function_alert();
-    }
-  }
+ 
+<?php 
+	session_start();
+	if($_SESSION['status']!="login"){
+		header("location:../index.php?pesan=belum_login");
+	}
 ?>
   <!--Start Navbar-->
 
@@ -171,7 +168,7 @@ padding-right : 50px;
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Misal@email.com</td>
+      <td><?php echo $_SESSION['username']; ?></td>
       <td>Men's Haircut</td>
       <td>Rp. 40.000</td>
     </tr>

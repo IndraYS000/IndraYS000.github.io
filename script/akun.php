@@ -97,15 +97,12 @@ body {
 	
   </head>
  <body>
-<?php
-  if (isset($_GET['pesan'])){
-    if ($_GET['pesan'] == "sukses"){
-      function function_alert() {
-        echo "<script>alert('selamat datang!');</script>";
-      }
-      function_alert();
-    }
-  }
+ 
+<?php 
+	session_start();
+	if($_SESSION['status']!="login"){
+		header("location:../index.php?pesan=belum_login");
+	}
 ?>
   <!--Start Navbar-->
 
@@ -178,6 +175,7 @@ body {
 
    <section class="jumbotron text-center">
   
+	<h4 class="headline4">Selamat datang, <?php echo $_SESSION['username']; ?>! anda telah login.</h4>
     <h1 class="headline4">Layanan Barber Kami</h1>
     <br>
     <br>
