@@ -197,7 +197,7 @@ body {
         <i class="fa fa-star fa-lg"></i>
         </p>
         <p class="harga"> Rp.40.000 </p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popup_konfirmasi">Order</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popup_konfirmasi1">Order</button>
       </div>
     </div>
     <div class="card ms-4" style="width: 14rem;">
@@ -213,7 +213,7 @@ body {
         <i class="fa fa-star fa-lg"></i>
         </p>
         <p class="harga"> Rp.10.000 </p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popup_konfirmasi">Order</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popup_konfirmasi2">Order</button>
       </div>
     </div>
     <div class="card ms-4" style="width: 14rem;">
@@ -229,7 +229,7 @@ body {
         <i class="fa fa-star-half fa-lg"></i>
         </p>
         <p class="harga"> Rp.60.000 </p>
-       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popup_konfirmasi">Order</button>
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popup_konfirmasi3">Order</button>
       </div>
     </div>
     <div class="card ms-4" style="width: 14rem;">
@@ -246,14 +246,14 @@ body {
         <i class="fa fa-star fa-lg"></i>
         </p>
         <p class="harga"> Rp.30.000 </p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popup_konfirmasi">Order</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popup_konfirmasi4">Order</button>
 		
       </div>
     </div>
   </div>
   
-<!-- Modal -->
-<div class="modal fade" id="popup_konfirmasi" tabindex="-1" role="dialog" aria-labelledby="popup_konfirmasi" aria-hidden="true">
+<!-- Modal 1 -->
+<div class="modal fade" id="popup_konfirmasi1" tabindex="-1" role="dialog" aria-labelledby="popup_konfirmasi" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -264,12 +264,80 @@ body {
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary">Konfirmasi</button>
+        <button onclick="location.href = 'invoice.php';" type="button" class="btn btn-primary">Konfirmasi</button>
       </div>
     </div>
   </div>
 </div>
   </section>
+
+  <!-- End Modal 1 -->
+
+<!-- Modal 2 -->
+<div class="modal fade" id="popup_konfirmasi2" tabindex="-1" role="dialog" aria-labelledby="popup_konfirmasi" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="popup_konfirmasi">Konfirmasi</h5>
+      </div>
+      <div class="modal-body">
+        Apakah anda yakin ingin membeli layanan ini ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button onclick="location.href = 'invoice2.php';" type="button" class="btn btn-primary">Konfirmasi</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- End Modal 2 -->
+
+<!-- Modal 3 -->
+<div class="modal fade" id="popup_konfirmasi3" tabindex="-1" role="dialog" aria-labelledby="popup_konfirmasi" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="popup_konfirmasi">Konfirmasi</h5>
+      </div>
+      <div class="modal-body">
+        Apakah anda yakin ingin membeli layanan ini ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button onclick="location.href = 'invoice3.php';" type="button" class="btn btn-primary">Konfirmasi</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- End Modal 3 -->
+
+<!-- Modal 4 -->
+<div class="modal fade" id="popup_konfirmasi4" tabindex="-1" role="dialog" aria-labelledby="popup_konfirmasi" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="popup_konfirmasi">Konfirmasi</h5>
+      </div>
+      <div class="modal-body">
+        Apakah anda yakin ingin membeli layanan ini ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button onclick="location.href = 'invoice4.php';" type="button" class="btn btn-primary">Konfirmasi</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- End Modal 4 -->
 
 <div class="background3">
           <h1 class="headline3" id="Contact Us">Contact Us</h1></br>
